@@ -1,0 +1,53 @@
+@import 'variables';
+
+@mixin font{
+  font-family: $fontFamily;
+  color: $TextColor;
+}
+  @mixin headers{
+   text-align: center;
+    #first {
+            color: red;
+        }
+    
+        #second {
+            color: green;
+        }
+    
+        #third {
+            color: blue;
+        }
+  }  
+  @mixin containers{
+    .container {
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+  }
+  @mixin contents{
+    .content {
+            flex-basis: 30%;
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid lightsalmon;
+            border-radius: 5px;
+            background-color: darkgrey;
+        }
+  }
+  @mixin pargraph{
+    p {
+            color: black;
+            font-family: Georgia, "Times New Roman", Times, serif;
+        }
+  }
+body{
+    @include font();
+     @include containers();
+     @include headers();
+     @include pargraph();
+     @include contents()
+    
+}

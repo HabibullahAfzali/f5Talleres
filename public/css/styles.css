@@ -1,0 +1,35 @@
+body {
+  font-family: Arial, sans-serif;
+  color: coral;
+  text-align: center;
+}
+body .container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+body #first {
+  color: red;
+}
+body #second {
+  color: green;
+}
+body #third {
+  color: blue;
+}
+body p {
+  color: black;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+body .content {
+  flex-basis: 30%;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid lightsalmon;
+  border-radius: 5px;
+  background-color: darkgrey;
+}
+
+/*# sourceMappingURL=styles.css.map */
